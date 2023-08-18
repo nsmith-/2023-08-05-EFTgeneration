@@ -20,7 +20,7 @@ email: ["first@example.org","second@example.org"]    # boxed, comma-separated li
 #eventbrite:           # optional: alphanumeric key for Eventbrite registration, e.g., "1234567890AB" (if Eventbrite is being used)
 ---
 
-
+The goal of this session is to generate an EFT signal sample
 
 
 
