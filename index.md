@@ -140,6 +140,5 @@ We maintain a list of common issues that occur during installation as a referenc
 {% if site.carpentry == "swc" %} {% include swc/setup.html %} {% elsif site.carpentry == "dc" %} {% include dc/setup.html %} {% elsif site.carpentry == "lc" %} {% include lc/setup.html %} {% endif %}
 
 
-The goal of this session is to generate an EFT signal sample
 
 
