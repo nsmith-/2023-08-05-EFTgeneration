@@ -472,6 +472,15 @@ Please check the "Setup" page of
 to obtain the software and data you will need to follow the lesson.
 {% endif %}
 
+Login to lxplus or lpc. Check the validity of your grid certifice.
+```shell
+voms-proxy-init -voms cms -valid 192:00
+```
+For the gridpack:
+```shell
+git clone https://github.com/cms-sw/genproductions -b mg265UL
+```  
+
 
 
 
