@@ -154,8 +154,8 @@ git clone https://github.com/cms-sw/genproductions -b mg265UL
 Find the files under bin/MadGraph5_aMCatNLO, Take a look at gridpack_generation.sh. Add a new model SMEFTsim_topU3l_MwScheme 
 ```shell
 cd addons/models
-wget https://feynrules.irmp.ucl.ac.be/attachment/wiki/SMEFT/SMEFTsim_topU3l_MwScheme_UFO.tar.gz
 ```  
+
 
 Take a look at param_card.dat and vertices.py/couplings.py
 ```shell
