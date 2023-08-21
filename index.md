@@ -142,17 +142,38 @@ We maintain a list of common issues that occur during installation as a referenc
 
 The goal of this session is to generate an EFT signal sample
 
-
+Login to lxplus or lpc. Check the validity of your grid certifice.
+```shell
+voms-proxy-init -voms cms -valid 192:00
+```
 For the gridpack:
 ```shell
 git clone https://github.com/cms-sw/genproductions -b mg265UL
 ```  
 
-Find the files under bin/MadGraph5_aMCatNLO, Take a look at gridpack_generation.sh
-
-Add a new model SMEFTsim_topU3l_MwScheme 
+Find the files under bin/MadGraph5_aMCatNLO, Take a look at gridpack_generation.sh. Add a new model SMEFTsim_topU3l_MwScheme 
+```shell
 cd addons/models
-wget 
+wget https://feynrules.irmp.ucl.ac.be/attachment/wiki/SMEFT/SMEFTsim_topU3l_MwScheme_UFO.tar.gz
+```  
+
+Take a look at param_card.dat and vertices.py/couplings.py
+```shell
+cd addons/cards/SMEFTsim_topU3l_MwScheme_UFO/TT01j_tutorial
+```
+
+To run locally:
+```shell
+./gridpack_generation.sh TT01j_tutorial addons/cards/SMEFTsim_topU3l_MwScheme_UFO/TT01j_tutorial
+```
+
+To run on condor:
+```shell
+nohup ./submit_cmsconnect_gridpack_generation.sh TT01j_tutorial addons/cards/SMEFTsim_topU3l_MwScheme_UFO/TT01j_tutorial > TT01j_tutorial.log
+```
+
+
+
 
 
 
