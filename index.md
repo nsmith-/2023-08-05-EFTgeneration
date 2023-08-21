@@ -142,12 +142,4 @@ We maintain a list of common issues that occur during installation as a referenc
 
 The goal of this session is to generate an EFT signal sample
 
-Login to lxplus or lpc. Check the validity of your grid certifice.
-```shell
-voms-proxy-init -voms cms -valid 192:00
-```
-For the gridpack:
-```shell
-git clone https://github.com/cms-sw/genproductions -b mg265UL
-```  
 
