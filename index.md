@@ -22,6 +22,10 @@ email: ["first@example.org","second@example.org"]    # boxed, comma-separated li
 
 The goal of this session is to generate an EFT signal sample
 
+
+<p>
+For the gridpack:<a href= <a href="https://github.com/cms-sw/genproductions"</a> 
+</p>
 For the gridpack:
 git clone https://github.com/cms-sw/genproductions -b mg265UL
 
