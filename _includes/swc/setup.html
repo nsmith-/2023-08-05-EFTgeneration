@@ -32,7 +32,7 @@ correspond to the topics covered in your workshop.
     We will start by creating a gridpack
   </p>
   <p>
-  Login to lxplus/lpc. Check the validity of your grid certifice.
+  Login to lxplus/lpc. Check the validity of your grid certificate:
  <code>voms-proxy-init -voms cms -valid 192:00</code>
   </p>
   <p>
@@ -56,4 +56,15 @@ To run on condor:
 <code>nohup ./submit_cmsconnect_gridpack_generation.sh TT01j_tutorial addons/cards/SMEFTsim_topU3l_MwScheme_UFO/TT01j_tutorial > TT01j_tutorial.log
 </code>
 </p>
+<p>  
+To run the gridpack to generate a GEN sample:
+ <code>cmsrel CMSSW_10_6_27</code>
+ <code>cd CMSSW_10_6_27/src</code>
+ <code>cmsenv</code>
+</p>
+<p>   
+<code>cmsRun gen_LO_01j_mc_102X_CP5.py gridpack=/home/<USER>/EFT_tutorial/genproductions/bin/MadGraph5_aMCatNLO/TT01j1l_HT800_slc7_amd64_gcc700_CMSSW_10_6_19_tarball.tar.xz maxEvents=1000000
+</code>
+  
+   
   
